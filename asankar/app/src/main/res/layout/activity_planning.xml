@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/gradiantback"
+  tools:context=".activities.planning.PlanningActivity">
+
+  <TextView
+    android:id="@+id/plan_textview_title"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/textview"
+    android:backgroundTint="#05197C"
+    android:gravity="center"
+    android:text="واحد برنامه ریزی"
+    android:textColor="#FFFFFF"
+    android:textSize="36sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/plangline11"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ScrollView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:padding="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/plangline11">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/plan_textview_delete"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:background="@drawable/image_bracket"
+          android:backgroundTint="#97A5EF"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="حذف داده"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:drawableTopCompat="@drawable/ic_delete" />
+
+        <TextView
+          android:id="@+id/plan_textview_update"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:background="@drawable/image_bracket"
+          android:backgroundTint="#97A5EF"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="ویرایش داده"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:drawableTopCompat="@drawable/ic_update" />
+
+        <TextView
+          android:id="@+id/plan_textview_add"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:background="@drawable/image_bracket"
+          android:backgroundTint="#97A5EF"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="ایجاد داده"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:drawableTopCompat="@drawable/ic_plus" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/plan_testtext2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:padding="8dp"
+          android:text="TextView"
+          android:visibility="invisible" />
+
+        <TextView
+          android:id="@+id/plan_textview_chart"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:background="@drawable/image_bracket"
+          android:backgroundTint="#97A5EF"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="گزارشات"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:drawableTopCompat="@drawable/ic_checklist" />
+
+        <TextView
+          android:id="@+id/plan_storagetext"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:background="@drawable/image_bracket"
+          android:backgroundTint="#97A5EF"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="انبار"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:drawableTopCompat="@drawable/ic_box" />
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/plangline11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

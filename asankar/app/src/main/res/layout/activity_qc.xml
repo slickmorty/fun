@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/gradiantback"
+  tools:context=".activities.qc.QCActivity">
+
+  <Button
+    android:id="@+id/qc_button_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/button"
+    android:padding="5dp"
+    android:text="مشاهده لیست کارها"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <Button
+    android:id="@+id/qc_button_confirm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/button"
+    android:padding="5dp"
+    android:text="تایید کار"
+    android:textColor="#FFFFFF"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/qc_button_view"
+    app:layout_constraintStart_toEndOf="@+id/qc_button_decline"
+    tools:visibility="visible" />
+
+  <Button
+    android:id="@+id/qc_button_decline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/button"
+    android:padding="5dp"
+    android:text="رد کردن کار"
+    android:textColor="#FFFFFF"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:visibility="visible" />
+
+  <ScrollView
+    android:id="@+id/scrollView3"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:padding="16dp"
+    app:layout_constraintBottom_toTopOf="@+id/guideline11"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline12">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/qc_textview_textbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview"
+        android:backgroundTint="#11173A"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#000000"
+        android:textDirection="rtl"
+        android:visibility="gone"
+        tools:visibility="visible" />
+    </LinearLayout>
+  </ScrollView>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.85" />
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.15" />
+
+  <ProgressBar
+    android:id="@+id/qc_progressBar"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:indeterminateTint="#A89090"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:visibility="visible" />
+
+  <TextView
+    android:id="@+id/qc_textview"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/textview"
+    android:backgroundTint="#05197C"
+    android:gravity="center"
+    android:text="واحد کنترل کیفی"
+    android:textColor="#FFFFFF"
+    android:textSize="36sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.slickmorty.asankar" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".activities.projectcontrol.ProjectControlMain"
+            android:label="@string/title_activity_project_control_main" >
+        </activity>
+        <activity
+            android:name=".activities.planning.reports.ReportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.reports.PdfViewerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.PlanningChartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.PlanningUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.PlanningDeleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.PlanningAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.engineering.EngineeringUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.engineering.EngineeringDeleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.engineering.EngineeringAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.reports.ProductPDFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.office.OfficeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.suggestions.SuggestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.educational.EducationalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.PlanningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.qc.QCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.planning.storage.StorageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.engineering.bom.BOMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.production.ProductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.production.dailyactivity.DailyReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.viewop.op.OPActivity"
+            android:label="@string/title_activity_o_p"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.engineering.EngineeringActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.viewop.stlist.StListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.viewop.prlinelist.PrLineListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.viewop.oplist.OPListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.viewop.prlist.PrListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mainpage.MainPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.login.Login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

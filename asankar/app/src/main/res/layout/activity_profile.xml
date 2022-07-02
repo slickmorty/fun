@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/gradiantback"
+  tools:context=".activities.profile.ProfileActivity">
+
+  <Button
+    android:id="@+id/btn_profle_attendance"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/button"
+    android:backgroundTint="#FFFFFF"
+    android:text="@string/fa_attendence"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline9"
+    app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+  <Button
+    android:id="@+id/btn_profile_leave"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/button"
+    android:backgroundTint="#F4F4F4"
+    android:text="@string/fa_leave"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline9"
+    app:layout_constraintTop_toBottomOf="@+id/btn_profle_attendance" />
+
+  <Button
+    android:id="@+id/btn_profile_food"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/button"
+    android:backgroundTint="#F4F4F4"
+    android:text="@string/fa_food"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.504"
+    app:layout_constraintStart_toStartOf="@+id/guideline9"
+    app:layout_constraintTop_toBottomOf="@+id/btn_profile_leave" />
+
+  <Button
+    android:id="@+id/btn_profile_receipt"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/button"
+    android:backgroundTint="#F4F4F4"
+    android:text="@string/fa_receipt"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+  <Button
+    android:id="@+id/btn_profile_property"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/button"
+    android:backgroundTint="#F4F4F4"
+    android:text="@string/fa_property"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_profile_note" />
+
+  <Button
+    android:id="@+id/btn_profile_note"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/button"
+    android:backgroundTint="#F4F4F4"
+    android:text="@string/fa_mynotes"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_profile_receipt" />
+
+  <ImageView
+    android:id="@+id/img_profile"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:padding="16dp"
+    app:layout_constraintBottom_toTopOf="@+id/guideline7"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline9"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+    app:srcCompat="@drawable/ic_profile" />
+
+  <TextView
+    android:id="@+id/txt_username"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/textview"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:padding="10dp"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="name" />
+
+  <TextView
+    android:id="@+id/txt_usertype"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/textview"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:padding="10dp"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_userid" />
+
+  <TextView
+    android:id="@+id/txt_userid"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/textview"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:padding="10dp"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_userfamilyname" />
+
+  <TextView
+    android:id="@+id/txt_userfamilyname"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/textview"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:padding="10dp"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_username" />
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.4" />
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.5" />
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

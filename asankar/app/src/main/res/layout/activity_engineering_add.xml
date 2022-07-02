@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/eng_add_"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/gradiantback"
+  tools:context=".activities.engineering.EngineeringAddActivity">
+
+  <HorizontalScrollView
+    android:id="@+id/horizontalScrollView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layoutDirection="rtl"
+    android:padding="16dp"
+    app:layout_constraintBottom_toTopOf="@+id/plangline11"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:background="@drawable/general_bracket"
+      android:gravity="center"
+      android:layoutDirection="rtl"
+      android:orientation="horizontal"
+      android:padding="5dp">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+          android:id="@+id/eng_btn_addproducttype"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:background="@drawable/button"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="افزودن پروژه جدید"
+          android:textColor="#FFFFFF" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+          android:id="@+id/eng_btn_addprline"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:background="@drawable/button"
+          android:padding="8dp"
+          android:text="افزودن خط تولید جدید"
+          android:textColor="#FFFFFF" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+          android:id="@+id/eng_btn_addstation"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:background="@drawable/button"
+          android:gravity="center"
+          android:padding="8dp"
+          android:text="افزودن ایستگاه جدید"
+          android:textColor="#FFFFFF" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+          android:id="@+id/eng_btn_addop"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/button"
+          android:padding="8dp"
+          android:text="افزودن OP جدید"
+          android:textColor="#FFFFFF" />
+      </LinearLayout>
+
+    </LinearLayout>
+  </HorizontalScrollView>
+
+  <ImageView
+    android:id="@+id/eng_imgbtn_confirm"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/button"
+    android:contentDescription="confirm"
+    android:padding="8dp"
+    android:visibility="visible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/planguideline14"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/planguideline12"
+    app:layout_constraintVertical_bias="1.0"
+    app:srcCompat="@drawable/ic_confirm" />
+
+  <ScrollView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@+id/planguideline12"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/plangline11"
+    app:layout_constraintVertical_bias="1.0">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone"
+          tools:visibility="visible" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+          android:drawableTint="#0027FF"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone"
+          tools:visibility="visible" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+          android:drawableTint="#0027FF"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone"
+          tools:visibility="visible" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/eng_linearl_text8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+          android:id="@+id/eng_edtext_8"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/edit"
+          android:ems="10"
+          android:hint="..."
+          android:inputType="textPersonName"
+          android:padding="16dp"
+          android:textDirection="rtl"
+          android:visibility="gone" />
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/planguideline14"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.5" />
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/planguideline12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.85" />
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/plangline11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+    id 'application'
+}
+
+group = 'com.kara'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+targetCompatibility = 1.8
+
+jar {
+    archiveBaseName = 'kara_webserver'
+    archiveVersion =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.json:json:20171018'
+    implementation "joda-time:joda-time:2.2"
+    implementation "org.hibernate:hibernate-core:5.4.1.Final"
+    testImplementation "junit:junit:4.12"
+    runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    implementation "de.codecentric:spring-boot-admin-starter-client:2.4.1"
+}
+
+test {
+    useJUnitPlatform()
+}
